@@ -1,0 +1,14 @@
+<div id="facets">
+  <h3 class="subheader">Manufacturer</h3>
+  <ul>
+    <% for row in @search.facet(:manufacturer).rows %>
+        <li>
+          <% if params[:manufacturer].blank? %>
+              <%= link_to row.value, :manufacturer => row.value %> (<%= row.count %>)
+          <% else %>
+              <strong><%= row.value %></strong> (<%= link_to "remove", :manufacturer => nil %>)
+          <% end %>
+        </li>
+    <% end %>
+  </ul>
+</div>

@@ -1,0 +1,65 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  manufacturer: MyString
+  model: MyString
+  description: MyText
+  equipment: MyText
+  year: 1
+  length: 1
+  beam: 1
+  draft: 1
+  material: MyString
+  hull: MyString
+  displacement: 1
+  boat_type: MyString
+  rigging: MyString
+  births: 1
+  cabins: 1
+  heads: 1
+  showers: 1
+  engines: 1
+  engine_type: MyString
+  fuel_type: MyString
+  hours: 1
+  horsepower: 1
+  boat_location_general: MyString
+  boat_location_city: MyString
+  boat_location_state: MyString
+  boat_location_zip: 1
+  condition: MyString
+  price: 9.99
+  create_date: 2013-10-24 12:06:54
+  update_date: 2013-10-24 12:06:54
+
+two:
+  manufacturer: MyString
+  model: MyString
+  description: MyText
+  equipment: MyText
+  year: 1
+  length: 1
+  beam: 1
+  draft: 1
+  material: MyString
+  hull: MyString
+  displacement: 1
+  boat_type: MyString
+  rigging: MyString
+  births: 1
+  cabins: 1
+  heads: 1
+  showers: 1
+  engines: 1
+  engine_type: MyString
+  fuel_type: MyString
+  hours: 1
+  horsepower: 1
+  boat_location_general: MyString
+  boat_location_city: MyString
+  boat_location_state: MyString
+  boat_location_zip: 1
+  condition: MyString
+  price: 9.99
+  create_date: 2013-10-24 12:06:54
+  update_date: 2013-10-24 12:06:54

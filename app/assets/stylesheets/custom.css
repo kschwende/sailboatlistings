@@ -1,0 +1,18 @@
+div.float {
+    float: left;
+    padding: 20px;
+}
+
+div.float p {
+    text-align: center;
+    font-size: small;
+}
+
+div.container {
+    border: 2px dashed #333;
+    background-color: #b7fff8;
+}
+
+div.spacer {
+    clear: both;
+}

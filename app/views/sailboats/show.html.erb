@@ -1,0 +1,159 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @sailboat.length.to_s + "ft" + " " + @sailboat.manufacturer + " " + @sailboat.model %>
+</p>
+
+<p>
+  <strong>Manufacturer:</strong>
+  <%= @sailboat.manufacturer %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @sailboat.model %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @sailboat.description %>
+</p>
+
+<p>
+  <strong>Equipment:</strong>
+  <%= @sailboat.equipment %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @sailboat.year %>
+</p>
+
+<p>
+  <strong>Length:</strong>
+  <%= @sailboat.length %>
+</p>
+
+<p>
+  <strong>Beam:</strong>
+  <%= @sailboat.beam %>
+</p>
+
+<p>
+  <strong>Draft:</strong>
+  <%= @sailboat.draft %>
+</p>
+
+<p>
+  <strong>Material:</strong>
+  <%= @sailboat.material %>
+</p>
+
+<p>
+  <strong>Hull:</strong>
+  <%= @sailboat.hull %>
+</p>
+
+<p>
+  <strong>Displacement:</strong>
+  <%= @sailboat.displacement %>
+</p>
+
+<p>
+  <strong>Boat type:</strong>
+  <%= @sailboat.boat_type %>
+</p>
+
+<p>
+  <strong>Rigging:</strong>
+  <%= @sailboat.rigging %>
+</p>
+
+<p>
+  <strong>Births:</strong>
+  <%= @sailboat.births %>
+</p>
+
+<p>
+  <strong>Cabins:</strong>
+  <%= @sailboat.cabins %>
+</p>
+
+<p>
+  <strong>Heads:</strong>
+  <%= @sailboat.heads %>
+</p>
+
+<p>
+  <strong>Showers:</strong>
+  <%= @sailboat.showers %>
+</p>
+
+<p>
+  <strong>Engines:</strong>
+  <%= @sailboat.engines %>
+</p>
+
+<p>
+  <strong>Engine type:</strong>
+  <%= @sailboat.engine_type %>
+</p>
+
+<p>
+  <strong>Fuel type:</strong>
+  <%= @sailboat.fuel_type %>
+</p>
+
+<p>
+  <strong>Hours:</strong>
+  <%= @sailboat.hours %>
+</p>
+
+<p>
+  <strong>Horsepower:</strong>
+  <%= @sailboat.horsepower %>
+</p>
+
+<p>
+  <strong>Boat location general:</strong>
+  <%= @sailboat.boat_location_general %>
+</p>
+
+<p>
+  <strong>Boat location city:</strong>
+  <%= @sailboat.boat_location_city %>
+</p>
+
+<p>
+  <strong>Boat location state:</strong>
+  <%= @sailboat.boat_location_state %>
+</p>
+
+<p>
+  <strong>Boat location zip:</strong>
+  <%= @sailboat.boat_location_zip %>
+</p>
+
+<p>
+  <strong>Condition:</strong>
+  <%= @sailboat.condition %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= number_to_currency(@sailboat.price) %>
+</p>
+
+<p>
+  <strong>Create date:</strong>
+  <%= @sailboat.create_date %>
+</p>
+
+<p>
+  <strong>Update date:</strong>
+  <%= @sailboat.update_date %>
+</p>
+
+<%= link_to 'Edit', edit_sailboat_path(@sailboat), class: "button radius" %> |
+<%= link_to 'Back', sailboats_path, class: "button radius" %>

@@ -1,0 +1,199 @@
+<%= form_for(@sailboat) do |f| %>
+    <% if @sailboat.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@sailboat.errors.count, "error") %> prohibited this sailboat from being saved:</h2>
+
+          <ul>
+            <% @sailboat.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <fieldset>
+      <legend>Sailboat information</legend>
+
+      <fieldset>
+        <legend>General</legend>
+
+    <div class="row">
+      <div class="large-6 columns">
+        <%= f.label :manufacturer %>
+        <%= f.text_field :manufacturer %>
+      </div>
+
+
+      <div class="large-6 columns">
+        <%= f.label :model %>
+        <%= f.text_field :model %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-3 columns">
+        <%= f.label :year %>
+        <%= f.number_field :year %>
+      </div>
+      <div class="large-3 columns">
+        <%= f.label :length %>
+        <%= f.number_field :length %>
+      </div>
+      <div class="large-3 columns">
+        <%= f.label :price %>
+        <%= f.text_field :price %>
+      </div>
+      <div class="large-3 columns">
+        <%= f.label :condition %>
+        <%= f.select(:condition, options_for_select([['Nothing Selected', nil], ['New', 'new'], ['Excellent', 'excellent'], ['Good', 'good'], ['Fair', 'fair'], ['Project Boat', 'project boat']])) %>
+      </div>
+     </div>
+
+
+
+        <div class="row">
+          <div class="large-12 columns">
+            <%= f.label :description %>
+            <%= f.text_area :description %>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="large-12 columns">
+            <%= f.label :equipment %>
+            <%= f.text_area :equipment %>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="large-4 columns">
+            <%= f.label :beam %>
+            <%= f.number_field :beam %>
+          </div>
+          <div class="large-4 columns">
+            <%= f.label :draft %>
+            <%= f.number_field :draft %>
+          </div>
+          <div class="large-4 columns">
+            <%= f.label :displacement %>
+            <%= f.number_field :displacement %>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="large-6 columns">
+            <%= f.label :hull %>
+            <%= f.select(:hull, options_for_select([['Nothing Selected', nil], ['Monohull', 'monohull'], ['Catamaran', 'catamaran'], ['Trimaran', 'trimaran']])) %>
+          </div>
+          <div class="large-6 columns">
+            <%= f.label :material %>
+            <%= f.select(:material, options_for_select([['Nothing Selected', nil], ['Fiberglass', 'fiberglass'], ['Composite', 'composite'], ['Wood', 'wood'],['Aluminum', 'aluminum'],['Steel', 'steel'], ['Other', 'other']])) %>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="large-6 columns">
+            <%= f.label :boat_type %>
+            <%= f.select(:boat_type, options_for_select([['Nothing Selected', nil], ['Cruiser', 'cruiser'], ['Daysailer', 'daysailer'], ['Dinghy', 'dinghy'],['Motorsailer', 'motorsailer'],['Racer/Cruiser', 'racer/cruiser'], ['Racer', 'racer'], ['Other', 'other']])) %>
+          </div>
+          <div class="large-6 columns">
+            <%= f.label :rigging %>
+            <%= f.select(:rigging, options_for_select([['Nothing Selected', nil], ['Cat Boat', 'catboat'], ['Cutter', 'cutter'], ['Ketch', 'ketch'],['Schooner', 'schooner'],['Scow', 'scow'], ['Masthead Sloop', 'masthead sloop'], ['Fractional Sloop', 'fractional sloop'], ['Yawl', 'yawl'], ['Other', 'other']])) %>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="large-3 columns">
+            <%= f.label :births %>
+            <%= f.number_field :births %>
+          </div>
+          <div class="large-3 columns">
+            <%= f.label :cabins %>
+            <%= f.number_field :cabins %>
+          </div>
+          <div class="large-3 columns">
+            <%= f.label :heads %>
+            <%= f.number_field :heads %>
+          </div>
+          <div class="large-3 columns">
+            <%= f.label :showers %>
+            <%= f.number_field :showers %>
+          </div>
+        </div>
+        </fieldset>
+
+
+      <fieldset>
+        <legend>Engines</legend>
+        <div class="row">
+          <div class="large-4 columns">
+            <%= f.label :engines %>
+            <%= f.select(:engines, options_for_select([['Nothing Selected', nil], ['None', 0], ['1', 1], ['2', 2]])) %>
+          </div>
+          <div class="large-4 columns">
+            <%= f.label :engine_type %>
+            <%= f.select(:engine_type, options_for_select([['Nothing Selected', nil], ['none', 'none'], ['Inboard', 'inboard'], ['Outboard', 'outboard']])) %>
+          </div>
+          <div class="large-4 columns">
+            <%= f.label :fuel_type %>
+            <%= f.select(:fuel_type, options_for_select([['Nothing Selected', nil], ['Diesel', 'diesel'], ['Gas', 'gas']])) %>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="large-6 columns">
+            <%= f.label :hours %>
+            <%= f.number_field :hours %>
+          </div>
+          <div class="large-6 columns">
+            <%= f.label :horsepower %>
+            <%= f.number_field :horsepower %>
+          </div>
+        </div>
+        </fieldset>
+
+      <fieldset>
+        <legend>Location</legend>
+      <div class="row">
+          <div class="large-12 columns">
+            <%= f.label :boat_location_general %>
+            <%= f.text_field :boat_location_general %>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="large-4 columns">
+            <%= f.label :boat_location_city %>
+            <%= f.text_field :boat_location_city %>
+          </div>
+          <div class="large-4 columns">
+            <%= f.label :boat_location_state %>
+            <%= f.text_field :boat_location_state %>
+          </div>
+          <div class="large-4 columns">
+            <%= f.label :boat_location_zip %>
+            <%= f.number_field :boat_location_zip %>
+          </div>
+        </div>
+        </fieldset>
+
+        <div class="row">
+          <div class="large-6 columns">
+            <%= f.label :create_date %>
+            <%= f.datetime_select :create_date %>
+          </div>
+          <div class="large-6 columns">
+            <%= f.label :update_date %>
+            <%= f.datetime_select :update_date %>
+          </div>
+        </div>
+
+        </fieldset>
+
+        <div class="button radius">
+            <%= f.submit %>
+        </div>
+
+
+
+<% end %>
