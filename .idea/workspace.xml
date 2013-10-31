@@ -8,18 +8,20 @@
     <file path="/_form.html.erb" changelist="78098af6-72b4-4965-bdfe-3d7af8b64958" time="1383081733519" ignored="false" />
     <file path="/show.html.erb" changelist="78098af6-72b4-4965-bdfe-3d7af8b64958" time="1383066033569" ignored="false" />
     <file path="/index.html.erb" changelist="78098af6-72b4-4965-bdfe-3d7af8b64958" time="1383066071375" ignored="false" />
-    <file path="/sailboat.rb" changelist="78098af6-72b4-4965-bdfe-3d7af8b64958" time="1383065919035" ignored="false" />
-    <file path="/sailboats_controller.rb" changelist="78098af6-72b4-4965-bdfe-3d7af8b64958" time="1382993818843" ignored="false" />
+    <file path="/sailboat.rb" changelist="78098af6-72b4-4965-bdfe-3d7af8b64958" time="1383165993268" ignored="false" />
+    <file path="/sailboats_controller.rb" changelist="78098af6-72b4-4965-bdfe-3d7af8b64958" time="1383166478769" ignored="false" />
     <file path="/user.rb" changelist="78098af6-72b4-4965-bdfe-3d7af8b64958" time="1383065479463" ignored="false" />
     <file path="/Gemfile" changelist="78098af6-72b4-4965-bdfe-3d7af8b64958" time="1382991943008" ignored="false" />
-    <file path="/routes.rb" changelist="78098af6-72b4-4965-bdfe-3d7af8b64958" time="1382722069628" ignored="false" />
-    <file path="/application.html.erb" changelist="78098af6-72b4-4965-bdfe-3d7af8b64958" time="1383088275083" ignored="false" />
+    <file path="/routes.rb" changelist="78098af6-72b4-4965-bdfe-3d7af8b64958" time="1383163360914" ignored="false" />
+    <file path="/application.html.erb" changelist="78098af6-72b4-4965-bdfe-3d7af8b64958" time="1383162778473" ignored="false" />
     <file path="/edit.html.erb" changelist="78098af6-72b4-4965-bdfe-3d7af8b64958" time="1382723736045" ignored="false" />
     <file path="/_top_bar.html.erb" changelist="78098af6-72b4-4965-bdfe-3d7af8b64958" time="1382996048907" ignored="false" />
     <file path="/20131028184757_add_feature_fields_to_sailboat.rb" changelist="78098af6-72b4-4965-bdfe-3d7af8b64958" time="1382986648271" ignored="false" />
     <file path="/_facets.html.erb" changelist="78098af6-72b4-4965-bdfe-3d7af8b64958" time="1382994839015" ignored="false" />
     <file path="/custom.css" changelist="78098af6-72b4-4965-bdfe-3d7af8b64958" time="1383087330278" ignored="false" />
     <file path="/new.html.erb" changelist="78098af6-72b4-4965-bdfe-3d7af8b64958" time="1383081086558" ignored="false" />
+    <file path="/pages_controller.rb" changelist="78098af6-72b4-4965-bdfe-3d7af8b64958" time="1383163077972" ignored="false" />
+    <file path="/_sailboatlistings.html.erb" changelist="78098af6-72b4-4965-bdfe-3d7af8b64958" time="1383162664633" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,31 +41,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sailboats/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="21" selection-start="1452" selection-end="1452" vertical-scroll-proportion="-18.125">
-              <folding>
-                <element signature="tag#div#0;tag#div#1;tag#fieldset#0;tag#fieldset#0" expanded="false" />
-                <element signature="tag#div#1;tag#div#1;tag#fieldset#0;tag#fieldset#0" expanded="false" />
-                <element signature="tag#div#2;tag#div#1;tag#fieldset#0;tag#fieldset#0" expanded="false" />
-                <element signature="tag#div#3;tag#div#1;tag#fieldset#0;tag#fieldset#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="36" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.7990315">
+            <state line="19" column="0" selection-start="359" selection-end="359" vertical-scroll-proportion="-11.875">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_user_nav.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/devise/menu/_user_nav.html.erb">
+      <file leaf-file-name="sailboats_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/sailboats_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="53" selection-start="613" selection-end="613" vertical-scroll-proportion="0.6721698">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sailboat.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/sailboat.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="27" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_shim.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_shim.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="69" selection-start="599" selection-end="599" vertical-scroll-proportion="-8.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="featured.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sailboats/featured.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
@@ -71,28 +86,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_registration_items.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/devise/menu/_registration_items.html.erb">
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="5" column="35" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
+      <file leaf-file-name="sailboats_helper.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/helpers/sailboats_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="973" selection-end="973" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sailboats/show.html.erb">
+      <file leaf-file-name="application_helper.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="4" selection-start="68" selection-end="68" vertical-scroll-proportion="-2.5">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_sailboatlistings.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_sailboatlistings.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="33" selection-start="90" selection-end="90" vertical-scroll-proportion="-2.5">
               <folding />
             </state>
           </provider>
@@ -101,36 +125,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/sailboats/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="621" selection-end="621" vertical-scroll-proportion="-3.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_search.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_search.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="9" selection-start="177" selection-end="177" vertical-scroll-proportion="-3.125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sailboats/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="6" selection-start="130" selection-end="130" vertical-scroll-proportion="-3.125">
-              <folding>
-                <marker date="1383081099000" expanded="true" signature="38:129" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="20" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
+            <state line="7" column="0" selection-start="158" selection-end="578" vertical-scroll-proportion="-3.125">
               <folding />
             </state>
           </provider>
@@ -146,26 +141,27 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/sailboats/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/devise/menu/_user_nav.html.erb" />
-        <option value="$PROJECT_DIR$/db/migrate/20131028184757_add_feature_fields_to_sailboat.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/sailboats_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_search.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_facets.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_top_bar.html.erb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/models/sailboat.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/sailboats/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sailboats/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sailboats/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css" />
         <option value="$PROJECT_DIR$/app/views/sailboats/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/pages/featured.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_sailboatlistings.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_shim.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/models/sailboat.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/sailboats_controller.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="238" />
     <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="825" />
@@ -305,14 +301,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="devise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -412,6 +400,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/sailboats" />
+    </key>
   </component>
   <component name="RunManager" selected="Rails.Development: sailboatlistings">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -672,11 +665,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="825" extended-state="6" />
+    <frame x="238" y="22" width="1440" height="825" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32967034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31420374" sideWeight="0.6703297" order="0" side_tool="false" content_ui="combo" />
@@ -688,7 +682,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -756,71 +749,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/solr/conf/solrconfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_facets.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="7" selection-start="441" selection-end="441" vertical-scroll-proportion="-7.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_top_bar.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="43" selection-start="464" selection-end="464" vertical-scroll-proportion="-8.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sailboats_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="82" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="2" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/sailboat.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="2" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="973" selection-end="973" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sailboats/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="4" selection-start="68" selection-end="68" vertical-scroll-proportion="-2.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sailboats/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="6" selection-start="130" selection-end="130" vertical-scroll-proportion="-3.125">
-          <folding>
-            <marker date="1383081099000" expanded="true" signature="38:129" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sailboats/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="21" selection-start="1452" selection-end="1452" vertical-scroll-proportion="-18.125">
@@ -843,21 +771,19 @@
     <entry file="file://$PROJECT_DIR$/app/views/devise/menu/_registration_items.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <marker date="1382722461000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1382722461000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_search.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="9" selection-start="177" selection-end="177" vertical-scroll-proportion="-3.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sailboats/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="621" selection-end="621" vertical-scroll-proportion="-3.75">
-          <folding />
+          <folding>
+            <marker date="1382994532000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -868,9 +794,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/solr/conf/synonyms.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sailboats/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="158" selection-end="578" vertical-scroll-proportion="-3.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_sailboatlistings.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="33" selection-start="90" selection-end="90" vertical-scroll-proportion="-2.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_shim.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="69" selection-start="599" selection-end="599" vertical-scroll-proportion="-8.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="36" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.7990315">
+        <state line="19" column="0" selection-start="359" selection-end="359" vertical-scroll-proportion="-11.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sailboats/featured.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="35" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/sailboats_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/sailboat.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="27" selection-start="465" selection-end="465" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/sailboats_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="53" selection-start="613" selection-end="613" vertical-scroll-proportion="0.6721698">
           <folding />
         </state>
       </provider>

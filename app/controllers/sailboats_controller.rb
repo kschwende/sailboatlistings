@@ -12,6 +12,16 @@ class SailboatsController < ApplicationController
     @sailboats = @search.results
   end
 
+  def featured
+    #@sailboats = Sailboat.where(:featured => true)
+    @search = Sailboat.search do
+      fulltext params[:search]
+      with(:featured, 'true')
+      with(:featured_end_date).greater_than(Time.now)
+    end
+    @sailboats = @search.results
+  end
+
   # GET /sailboats/1
   # GET /sailboats/1.json
   def show

@@ -12,6 +12,9 @@ class Sailboat < ActiveRecord::Base
     text :model, :boost => 3
     text :description
     string :manufacturer
+
+    boolean :featured
+    time :featured_end_date
   end
 
 end
