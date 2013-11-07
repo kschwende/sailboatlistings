@@ -2,12 +2,21 @@
   <div class="spacer">
   </div>
 
-  <% @sailboats.each do |sailboat| %>
-      <div class="float">
-        <img src="image1.gif" width="200" height="200"
-             alt="image 1" /><br />
-        <p><%= sailboat.length.to_s + "ft" + " " + sailboat.manufacturer + " " + sailboat.model %></p>
-      </div>
+  <% @sailboats.each do |s| %>
+        <% if s.featured %>
+            <div class="featured">
+              <%= link_to image_tag(s.photo.url(:small)), '/sailboats/' + s.id.to_s  %>
+              <br />
+              <p><%= s.length.to_s + "ft" + " " + s.manufacturer + " " + s.model %></p>
+            </div>
+        <% else %>
+          <div class="float">
+            <%= link_to image_tag(s.photo.url(:small)), '/sailboats/' + s.id.to_s  %>
+            <br />
+            <p><%= s.length.to_s + "ft" + " " + s.manufacturer + " " + s.model %></p>
+          </div>
+      <% end %>
+
 
   <% end %>
 
@@ -16,3 +25,4 @@
   <div class="spacer">
   </div>
 </div>
+

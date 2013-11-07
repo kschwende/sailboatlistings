@@ -1,0 +1,64 @@
+<% provide(:title, @user.email) %>
+<div class="row">
+  <div class="span8">
+    <% if @user.sailboats.any? %>
+        <h3>Sailboats (<%= @user.sailboats.count %>)</h3>
+
+        <div class="container">
+          <div class="spacer">
+          </div>
+
+          <div class="table">
+            <table>
+              <thead>
+              <tr>
+                <th>Photo</th>
+                <th>Title</th>
+                <th>Manufacturer</th>
+                <th>Model</th>
+                <th>Description</th>
+                <th>Year</th>
+                <th>Length</th>
+                <th>Price</th>
+
+
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+              </thead>
+
+              <tbody>
+              <% @sailboats.each do |s| %>
+                  <tr>
+                    <td><%= image_tag s.photo.url(:small) %></td>
+                    <td><%= s.length.to_s + "ft" + " " + s.manufacturer + " " + s.model %></td>
+                    <td><%= s.manufacturer %></td>
+                    <td><%= s.model %></td>
+                    <td><%= s.description %></td>
+                    <td><%= s.year %></td>
+                    <td><%= s.length %></td>
+                    <td><%= number_to_currency(s.price) %></td>
+
+                    <td><%= link_to 'Show', s, class: "tiny button radius" %></td>
+                    <td><%= link_to 'Edit', edit_sailboat_path(s), class: "tiny button radius" %></td>
+                    <td><%= link_to 'Destroy', s, class: "tiny button radius", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+
+                  </tr>
+              <% end %>
+              </tbody>
+            </table>
+          </div>
+
+
+
+          <div class="spacer">
+          </div>
+        </div>
+
+    <% end %>
+  </div>
+  <br>
+  <%= link_to 'New Listing', new_sailboat_path, class: "button radius" %>
+</div>

@@ -1,4 +1,4 @@
-<%= form_for(@sailboat) do |f| %>
+<%= form_for @sailboat, :html => { :multipart => true } do |f| %>
     <% if @sailboat.errors.any? %>
         <div id="error_explanation">
           <h2><%= pluralize(@sailboat.errors.count, "error") %> prohibited this sailboat from being saved:</h2>
@@ -187,6 +187,12 @@
             <%= f.datetime_select :update_date %>
           </div>
         </div>
+      <div class="row">
+        <div class="large-12 cloumns">
+          <%= f.file_field :photo %>
+        </div>
+      </div>
+
 
         </fieldset>
 

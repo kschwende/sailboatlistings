@@ -1,3 +1,15 @@
+/* Defining the listing grid */
+
+div.container {
+    /* border: 2px dashed #d0d0d0; */
+    background-color: #effffd;
+}
+
+div.spacer {
+    clear: both;
+}
+/* Standard listing treatment */
+
 div.float {
     float: left;
     padding: 20px;
@@ -8,11 +20,16 @@ div.float p {
     font-size: small;
 }
 
-div.container {
-    border: 2px dashed #333;
-    background-color: #b7fff8;
+
+/* This is where we control the featured listing css */
+
+div.featured {
+    float: left;
+    padding: 20px;
+    background-color: #e757ff;
 }
 
-div.spacer {
-    clear: both;
+div.featured p {
+    text-align: center;
+    font-size: small;
 }

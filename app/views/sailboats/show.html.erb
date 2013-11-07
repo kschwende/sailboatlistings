@@ -5,155 +5,150 @@
   <%= @sailboat.length.to_s + "ft" + " " + @sailboat.manufacturer + " " + @sailboat.model %>
 </p>
 
-<p>
-  <strong>Manufacturer:</strong>
-  <%= @sailboat.manufacturer %>
-</p>
+<%= image_tag @sailboat.photo.url(:regular) %>
 
-<p>
-  <strong>Model:</strong>
-  <%= @sailboat.model %>
-</p>
+<fieldset>
+  <legend>Sailboat information</legend>
 
-<p>
-  <strong>Description:</strong>
-  <%= @sailboat.description %>
-</p>
+  <fieldset>
+    <legend>General</legend>
 
-<p>
-  <strong>Equipment:</strong>
-  <%= @sailboat.equipment %>
-</p>
+    <div class="row">
+      <div class="large-6 columns">
+        <%= @sailboat.manufacturer %>
+      </div>
+      <div class="large-6 columns">
+        <%= @sailboat.model %>
+      </div>
+    </div>
 
-<p>
-  <strong>Year:</strong>
-  <%= @sailboat.year %>
-</p>
+    <div class="row">
+      <div class="large-3 columns">
+        <%= @sailboat.year %>
+      </div>
+      <div class="large-3 columns">
+        <%= @sailboat.length %>
+      </div>
+      <div class="large-3 columns">
+        <%= @sailboat.price %>
+      </div>
+      <div class="large-3 columns">
+        <%= @sailboat.condition %>
+      </div>
+    </div>
 
-<p>
-  <strong>Length:</strong>
-  <%= @sailboat.length %>
-</p>
 
-<p>
-  <strong>Beam:</strong>
-  <%= @sailboat.beam %>
-</p>
 
-<p>
-  <strong>Draft:</strong>
-  <%= @sailboat.draft %>
-</p>
+      <div class="row">
+        <div class="large-12 columns">
+          <%= @sailboat.description %>
+        </div>
+      </div>
 
-<p>
-  <strong>Material:</strong>
-  <%= @sailboat.material %>
-</p>
+      <div class="row">
+        <div class="large-12 columns">
+          <%= @sailboat.equipment %>
+        </div>
+      </div>
 
-<p>
-  <strong>Hull:</strong>
-  <%= @sailboat.hull %>
-</p>
+      <div class="row">
+        <div class="large-4 columns">
+          <%= @sailboat.beam %>
+        </div>
+        <div class="large-4 columns">
+          <%= @sailboat.draft %>
+        </div>
+        <div class="large-4 columns">
+          <%= @sailboat.displacement %>
+        </div>
+      </div>
 
-<p>
-  <strong>Displacement:</strong>
-  <%= @sailboat.displacement %>
-</p>
+      <div class="row">
+        <div class="large-6 columns">
+          <%= @sailboat.hull %>
+        </div>
+          <div class="large-6 columns">
+            <%= @sailboat.material %>
+          </div>
+       </div>
 
-<p>
-  <strong>Boat type:</strong>
-  <%= @sailboat.boat_type %>
-</p>
 
-<p>
-  <strong>Rigging:</strong>
-  <%= @sailboat.rigging %>
-</p>
+        <div class="row">
+          <div class="large-6 columns">
+            <%= @sailboat.boat_type %>
+          </div>
+          <div class="large-6 columns">
+            <%= @sailboat.rigging %>
+          </div>
+        </div>
 
-<p>
-  <strong>Births:</strong>
-  <%= @sailboat.births %>
-</p>
+        <div class="row">
 
-<p>
-  <strong>Cabins:</strong>
-  <%= @sailboat.cabins %>
-</p>
+          <div class="large-3 columns">
+            <%= @sailboat.births %>
+          </div>
 
-<p>
-  <strong>Heads:</strong>
-  <%= @sailboat.heads %>
-</p>
+          <div class="large-3 columns">
+            <%= @sailboat.cabins %>
+          </div>
 
-<p>
-  <strong>Showers:</strong>
-  <%= @sailboat.showers %>
-</p>
+          <div class="large-3 columns">
+            <%= @sailboat.heads %>
+          </div>
 
-<p>
-  <strong>Engines:</strong>
-  <%= @sailboat.engines %>
-</p>
+          <div class="large-3 columns">
+            <%= @sailboat.showers %>
+          </div>
 
-<p>
-  <strong>Engine type:</strong>
-  <%= @sailboat.engine_type %>
-</p>
+        </div>
 
-<p>
-  <strong>Fuel type:</strong>
-  <%= @sailboat.fuel_type %>
-</p>
+    </fieldset>
+  <fieldset>
+    <legend>Engines</legend>
+    <div class="row">
+      <div class="large-4 columns">
+        <%= @sailboat.engines %>
+      </div>
+      <div class="large-4 columns">
+        <%= @sailboat.engine_type %>
+      </div>
+      <div class="large-4 columns">
+        <%= @sailboat.fuel_type %>
+      </div>
+    </div>
 
-<p>
-  <strong>Hours:</strong>
-  <%= @sailboat.hours %>
-</p>
+    <div class="row">
+      <div class="large-6 columns">
+        <%= @sailboat.hours %>
+      </div>
+      <div class="large-6 columns">
+        <%= @sailboat.horsepower %>
+      </div>
+    </div>
+  </fieldset>
 
-<p>
-  <strong>Horsepower:</strong>
-  <%= @sailboat.horsepower %>
-</p>
+  <fieldset>
+    <legend>Location</legend>
+    <div class="row">
+      <div class="large-12 columns">
+        <%= @sailboat.boat_location_general %>
+      </div>
+    </div>
 
-<p>
-  <strong>Boat location general:</strong>
-  <%= @sailboat.boat_location_general %>
-</p>
-
-<p>
-  <strong>Boat location city:</strong>
-  <%= @sailboat.boat_location_city %>
-</p>
-
-<p>
-  <strong>Boat location state:</strong>
-  <%= @sailboat.boat_location_state %>
-</p>
-
-<p>
-  <strong>Boat location zip:</strong>
-  <%= @sailboat.boat_location_zip %>
-</p>
-
-<p>
-  <strong>Condition:</strong>
-  <%= @sailboat.condition %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= number_to_currency(@sailboat.price) %>
-</p>
-
-<p>
-  <strong>Create date:</strong>
-  <%= @sailboat.create_date %>
-</p>
-
-<p>
-  <strong>Update date:</strong>
-  <%= @sailboat.update_date %>
-</p>
-
+    <div class="row">
+      <div class="large-4 columns">
+        <%= @sailboat.boat_location_city %>
+      </div>
+      <div class="large-4 columns">
+        <%= @sailboat.boat_location_state %>
+      </div>
+      <div class="large-4 columns">
+        <%= @sailboat.boat_location_zip %>
+      </div>
+    </div>
+  </fieldset>
+</fieldset>
 <%= link_to 'Edit', edit_sailboat_path(@sailboat), class: "button radius" %> |
 <%= link_to 'Back', sailboats_path, class: "button radius" %>
+
+

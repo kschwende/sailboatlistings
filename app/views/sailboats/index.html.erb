@@ -9,72 +9,13 @@
     <div class="spacer">
     </div>
 
-      <% @sailboats.each do |sailboat| %>
-          <div class="float">
-            <img src="image1.gif" width="200" height="200"
-                 alt="image 1" /><br />
-            <p><%= sailboat.length.to_s + "ft" + " " + sailboat.manufacturer + " " + sailboat.model %></p>
-          </div>
-
-      <% end %>
-
-
-
+<%= render 'layouts/sailboatlistings' %>
     <div class="spacer">
     </div>
   </div>
   </div>
-
-  <div class="large-2 columns">
-
-    <%= render 'layouts/facets' %>
-
-    <h3 class="subheader">About Us</h3>
-    We are remaking Sailboats listings as a project that might someday make a buck or two.
-
-  </div>
+    <div class="large-2 columns">
+        <%= render 'layouts/facets' %>
+    </div>
 </div>
 
-<div class="table">
-  <table>
-    <thead>
-    <tr>
-      <th>Title</th>
-      <th>Manufacturer</th>
-      <th>Model</th>
-      <th>Description</th>
-      <th>Year</th>
-      <th>Length</th>
-      <th>Price</th>
-
-
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-    </thead>
-
-    <tbody>
-    <% @sailboats.each do |sailboat| %>
-        <tr>
-          <td><%= sailboat.length.to_s + "ft" + " " + sailboat.manufacturer + " " + sailboat.model %></td>
-          <td><%= sailboat.manufacturer %></td>
-          <td><%= sailboat.model %></td>
-          <td><%= sailboat.description %></td>
-          <td><%= sailboat.year %></td>
-          <td><%= sailboat.length %></td>
-          <td><%= number_to_currency(sailboat.price) %></td>
-
-          <td><%= link_to 'Show', sailboat, class: "tiny button radius" %></td>
-          <td><%= link_to 'Edit', edit_sailboat_path(sailboat), class: "tiny button radius" %></td>
-          <td><%= link_to 'Destroy', sailboat, class: "tiny button radius", method: :delete, data: { confirm: 'Are you sure?' } %></td>
-
-
-        </tr>
-    <% end %>
-    </tbody>
-  </table>
-</div>
-<br>
-
-<%= link_to 'New Sailboat', new_sailboat_path, class: "button radius" %>

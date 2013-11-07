@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131028184757) do
+ActiveRecord::Schema.define(version: 20131107184849) do
 
   create_table "sailboats", force: true do |t|
     t.string   "manufacturer"
@@ -48,7 +48,14 @@ ActiveRecord::Schema.define(version: 20131028184757) do
     t.datetime "updated_at"
     t.boolean  "featured"
     t.date     "featured_end_date"
+    t.integer  "user_id"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
   end
+
+  add_index "sailboats", ["user_id", "created_at"], name: "index_sailboats_on_user_id_and_created_at"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

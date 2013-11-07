@@ -33,6 +33,9 @@ gem 'devise'
 # Use Zurb-Foundation for the stylie bits
 gem 'zurb-foundation'
 
+#Use Paperclip for photo attachments
+gem 'paperclip'
+
 # Use Solr for search
 gem 'sunspot_rails'
 gem 'sunspot_solr'
